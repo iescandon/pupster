@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 // By importing the Navbar.css file, it is added to the DOM whenever this component loads
 
@@ -8,20 +8,22 @@ import React from "react";
 // Non quoted values default to "pixels", e.g. height, margin, padding
 
 const styles = {
-  navbarStyle: {
-    color: "white",
-    justifyContent: "flex-end"
-  }
+	navbarStyle: {
+		color: 'white',
+		justifyContent: 'flex-end',
+	},
 };
 
 // We use JSX curly braces to evaluate the style object on the JSX tag
 
 function Navbar() {
-  return (
-    <nav style={styles.navbarStyle} className="navbar">
-      <a href="/">Pupster</a>
-    </nav>
-  );
+	return (
+		<nav style={styles.navbarStyle} className="navbar">
+			<a href="/">About</a>
+			<a href="/discover">Discover</a>
+			<a href="/search">Search</a>
+		</nav>
+	);
 }
 
 export default Navbar;
